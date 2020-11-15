@@ -1,0 +1,126 @@
+/*DISENO CONTACTO*/
+
+section.contenedormapa {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    align-items: center;
+    width: 60%;
+
+    iframe {
+        max-width: 100%;
+    }
+
+    .texto_Ubicacion {
+        width: 25%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        justify-content: center;
+
+        h2 {
+            text-align: center;
+        }
+
+    }
+
+    /*cierra texto_ubicacion*/
+}
+
+/*Cierra section.contenedormapa*/
+
+/*1127*/
+@media (max-width: 1127px) {
+    section.contenedormapa {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+        margin-bottom: 20px;
+        justify-content: flex-start;
+        width: 100%;
+
+        iframe {
+            width: 800px;
+        }
+
+        .texto_Ubicacion {
+            width: 90%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+
+            div {
+                width: 90%;
+                height: auto;
+                margin-top: 25px;
+
+                h2 {
+                    text-align: center;
+                    font-size: 1.5em;
+                }
+
+                p {
+                    font-size: 1em;
+                }
+            }
+
+            .texto_Ubicacion_Padding {
+                padding-right: 25px;
+                border-right: solid 1px $secondary-color;
+            }
+        }
+    }
+
+}
+
+
+/*576 mobile*/
+
+@media (max-width: 576px) {
+
+    section.contenedormapa {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+        margin-bottom: 20px;
+        justify-content: flex-start;
+        width: 90%;
+
+
+        .texto_Ubicacion {
+            width: 90%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+
+            div {
+                width: 90%;
+                height: auto;
+                margin-top: 25px;
+
+                h2 {
+                    text-align: center;
+                    font-size: 1.3em;
+                }
+
+                p {
+                    font-size: 0.8em;
+                }
+            }
+
+            .texto_Ubicacion_Padding {
+                padding-right: 25px;
+                border-right: solid 1px $secondary-color;
+            }
+        }
+    }
+}

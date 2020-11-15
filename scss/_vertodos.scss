@@ -1,0 +1,61 @@
+.div-vertodos {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+    .div-categorias {
+        display: flex;
+        flex-direction: row;
+        background-color: $primary-color;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        .div-textovertodos {
+            width: 45%;
+
+            a {
+                text-decoration: none;
+            }
+
+            h3 {
+                font-size: 2em;
+                color: $neutral-color;
+                letter-space: 1px;
+                padding: 1em;
+            }
+        }
+    }
+
+}
+
+/*660*/
+@media (max-width: 660px) {
+    .div-vertodos {
+
+
+        .div-categorias {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: no wrap;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            padding: 0px;
+
+            .div-textovertodos {
+                a {
+                    text-decoration: none;
+                }
+
+                h3 {
+                    font-size: 0.8em;
+                    color: $neutral-color;
+                    letter-space: 1px;
+                }
+            }
+        }
+    }
+}

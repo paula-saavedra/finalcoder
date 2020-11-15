@@ -1,0 +1,41 @@
+/*VARIABLES*/
+
+$primary-color: #e6b8bc;
+$secondary-color: #878787;
+$neutral-color: #ffffff;
+
+@import "header";
+@import "index";
+@import "form";
+@import "footer";
+@import "staff";
+@import "contacto";
+@import "galeria";
+@import "cursos";
+@import "vertodos";
+
+/*Generales*/
+p {
+    font-family: 'Roboto', sans-serif;
+    color: $secondary-color;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1em;
+}
+
+h2 {
+    font-family: 'Vidaloka', serif;
+    color: #e6b8bc;
+    font-weight: 400;
+    text-align: center;
+    font-size: 3em;
+}
+
+h3 {
+    font-family: 'Vidaloka', serif;
+    color: #e6b8bc;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 2em;
+}

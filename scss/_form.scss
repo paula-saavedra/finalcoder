@@ -1,0 +1,77 @@
+.mi_form {
+    width: 60%;
+    padding-top: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-bottom: 60px;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 15px;
+
+    select option {
+        font-size: 0.8em;
+        color: $secondary-color;
+        background-color: white;
+    }
+
+    .mi_label {
+        font-family: 'Vidaloka', serif;
+        color: white;
+        font-size: 1.2em;
+    }
+
+    input {
+        font-family: 'Vidaloka', sans-serif;
+        color: $secondary-color;
+        font-size: 1em;
+        font-weight: 300;
+        background-color: white;
+        border: none;
+    }
+
+    .mi_button {
+        font-family: 'Vidaloka', sans-serif;
+        color: #e6b8bc;
+        font-size: 1em;
+        width: 5em;
+        font-weight: 300;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .acepta_terminos {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    select {
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.8em;
+        color: #878787;
+
+        option {
+            font-family: 'Roboto', sans-serif;
+            color: $secondary-color;
+            font-size: 1.1em;
+            font-weight: 300;
+            background-color: $neutral-color;
+            border: none;
+            line-height: 1.7em;
+        }
+
+        /*Cierre option*/
+    }
+
+    /*Cierre select*/
+}
+
+@media (max-width: 768px) {
+    .mi_form {
+        width: 90%;
+    }
+}

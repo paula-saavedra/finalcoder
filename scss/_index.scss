@@ -1,0 +1,372 @@
+section#cursosDestacados {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+    padding-left: 60px;
+    margin-bottom: 0px;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    h3 {
+        font-family: 'Roboto', serif;
+        color: $primary-color;
+        font-weight: 500;
+        letter-spacing: 3px;
+        text-align: center;
+        font-size: 1em;
+        margin-top: 1em;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    div {
+        width: 280px;
+        margin-top: 2em;
+        animation-delay: 2s;
+    }
+
+    /*cierra DIV*/
+
+}
+
+/*cierra section#cursosDestacados*/
+
+section#reconocimientos {
+    background-color: $primary-color;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    padding-left: 2em;
+    animation-delay: 3s;
+}
+
+section#reconocimientos h2 {
+    font-family: 'Vidaloka', serif;
+    color: #ffff;
+    font-size: 2em;
+    font-weight: 200;
+    text-align: center;
+    margin: auto;
+    padding-left: 1em;
+}
+
+#reconocimientos p {
+    color: $neutral-color;
+    text-align: center;
+    margin: auto;
+    font-size: 0.9em;
+}
+
+div#textoReconocimiento {
+    width: 40%;
+    margin-left: 20px;
+}
+
+
+
+/*Expos*/
+section.expos {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 90em;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.expoEventos {
+    animation-delay: 4s;
+}
+
+.expoPasteleria {
+    animation-delay: 4.8s;
+}
+
+.expoDecoracion {
+    animation-delay: 6s;
+}
+
+section.expos div {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+section.expos div div.textoExpo {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3em;
+}
+
+.textoEspecial {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 3em;
+}
+
+
+
+/*---------------------------breakpoint 1127---------------*/
+@media (max-width: 1127px) {
+
+    section#cursosDestacados {
+        width: 75%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        margin: 0 auto;
+        justify-content: space-between;
+
+        div {
+            width: 30%;
+            margin-top: 20px;
+
+            h3 {
+                font-size: 1em;
+            }
+
+            p {
+                font-size: 0.8em;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+        }
+
+        /*cierre div*/
+    }
+
+    /*cierre sectioncursosdestacados*/
+
+    #reconocimientos {
+        width: 85%;
+        padding-top: 5px;
+        align-items: center;
+
+        img {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #textoReconocimiento {
+            width: 100%;
+            margin-top: 15px;
+
+        }
+
+        /*cierre texto reconociemient*/
+
+    }
+
+    /*cierre reconocimientos*/
+
+    section.expos {
+        width: 100%;
+        height: auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: column;
+
+        div {
+            width: 100%;
+            margin-bottom: 25px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            h3 {
+                font-size: 1.8em;
+                margin-top: 50px;
+            }
+
+            p {
+                font-size: 0.8em;
+                line-height: 1.5em;
+            }
+
+        }
+
+        /*cierradiv*/
+
+    }
+
+    /*cierreexpos*/
+
+}
+
+/*-------------------------------1315--------------*/
+@media (max-width: 1315px) {
+    section#reconocimientos {
+        width: 90%;
+    }
+
+}
+
+/*-------------------------------fluid mobiel 822--------------*/
+@media (max-width: 822px) {
+    section#expos {
+        div {
+            img {
+                width: 50%;
+                height: 50%;
+            }
+        }
+    }
+}
+
+/*-------------------------------fluid mobiel 576--------------*/
+@media (max-width: 576px) {
+    section#reconocimientos {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+
+    section#reconocimientos img {
+        width: 100%;
+    }
+
+    div#textoReconocimiento {
+        text-align: center;
+        width: 90%;
+        padding: 0px;
+        padding-top: 1em;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    section#cursosDestacados {
+        padding: 0px;
+        margin: 0 auto;
+        margin-top: 50px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        align-items: center;
+
+        p {
+            font-size: 0.8em;
+        }
+    }
+
+    section#reconocimientos h2 {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    section.expos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: auto;
+        padding-top: 3em;
+        padding-bottom: 1em;
+
+        .segundo_div {
+            border-bottom: solid 1px;
+            border-color: $secondary-color;
+            padding-bottom: 45px;
+        }
+
+        p {
+            font-size: 0.8em;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            padding-top: 0px;
+
+            img {
+                width: 450px;
+            }
+
+            div.textoExpo {
+                text-align: center;
+                margin: 0px;
+                padding: 0px;
+                padding-top: 0px;
+                padding-bottom: 20px;
+                margin-left: 0px;
+                border-bottom: solid 1px;
+                border-color: $secondary-color;
+
+                h3 {
+                    margin-top: 25px;
+                }
+            }
+
+            .textoEspecial {
+                text-align: center;
+                margin-top: 0px;
+                padding-top: 0px;
+                padding-right: 0px;
+                padding-bottom: 0px;
+                margin: 0 auto;
+
+                h3 {
+                    margin-top: 0px;
+                    padding-top: 0px;
+                }
+
+                p {
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    section#cursosDestacados {
+        width: 90%;
+        margin-top: 20px;
+
+        div {
+            width: 100%;
+
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}

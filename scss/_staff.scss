@@ -1,0 +1,101 @@
+/*DISENO STAFF*/
+.staff {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.staff div {
+    height: auto;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.staff div img {
+    display: block;
+    margin: 0 auto;
+}
+
+.staff h2 {
+    margin-top: 1em;
+}
+
+/*responsive 576*/
+@media (max-width: 576px) {
+    section.staff {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .staffuno,
+        .staffdos,
+        .stafftres,
+        .staffcuatro,
+        .staffcinco,
+        .staffseis {
+            width: 100%;
+            backgroundcolor: red;
+        }
+    }
+
+}
+
+/*responsive 768px*/
+@media (max-width: 768px) {
+    section.staff {
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 0.8em;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    /*cierra section staff*/
+}
+
+/*responsive 1127px*/
+@media (max-width: 1127px) {
+    section.staff {
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 0.8em;
+        }
+
+        div {
+            width: 28%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    }
+
+    /*cierra section staff*/
+}

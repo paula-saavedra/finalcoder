@@ -1,0 +1,79 @@
+.div-galeria {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    height: auto;
+
+    .div-galeriaimagen {
+        width: 20%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        border: solid 1 px gray;
+        padding: 5px;
+
+        .div-epigrafe {
+            height: 50px;
+            padding-top: 8px;
+            padding-left: 8px;
+            text-align: left;
+            background-color: $primary-color;
+
+            h4 {
+                color: $neutral-color;
+                font-size: 1em;
+                letter-spacing: none;
+                font-family: 'Vidaloka', serif;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+
+            .p-epigrafe {
+                width: 100%;
+                margin-top: 0px;
+                color: $neutral-color;
+                text-align: left;
+                font-size: 0.8em;
+                padding-left: 0px;
+
+                strong {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+/*Galeria responsive - 810*/
+@media (max-width: 810px) {
+    .div-galeria {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: no wrap;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 50px;
+        aling-content: space-beetween;
+
+        .div-galeriaimagen {
+            width: 150px;
+            padding: 5px;
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .div-epigrafe {
+                width: 150px;
+            }
+
+        }
+    }
+}
